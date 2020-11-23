@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <center>
+        <Button fx:id="btn" mnemonicParsing="false" onAction="#getJSON" text="GET JSON" BorderPane.alignment="CENTER" />
+    </center>
+    <top>
+        <TextField fx:id="textFieldURL" alignment="CENTER" disable="true" editable="false" text="http://www.omdbapi.com/?apikey=d3570ab3" BorderPane.alignment="CENTER" />
+    </top>
+    <bottom>
+        <TextArea fx:id="textAreaJSON" prefHeight="317.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+    </bottom>
+    <left>
+        <Button fx:id="btnSortRarity" disable="true" mnemonicParsing="false" onAction="#btnSortYear" text="Sort by Rarity" BorderPane.alignment="CENTER" />
+    </left>
+    <right>
+        <Button fx:id="btnSortName" disable="true" mnemonicParsing="false" onAction="#btnSortRelease" text="Sort by Name" BorderPane.alignment="CENTER" />
+    </right>
+</BorderPane>
